@@ -1,0 +1,438 @@
+/*======= Home =======*/
+.home {
+    height: 100vh;
+    position: relative;
+
+    @include respond-below(xl) {
+        height: 100vh;
+    }
+
+    @include respond-below(lg) {
+        height: 100vh;
+    }
+
+    @include respond-below(md) {
+        height: 100vh;
+    }
+
+    @include respond-below(sm) {
+        height: 100vh;
+    }
+
+    &.contact {
+        height: auto;
+        padding: 0 0 50px 0;
+
+        .social-media-hero {
+            top: 30%;
+
+            @include respond-below(md) {
+                top: 17%;
+            }
+
+            @include respond-below(sm) {
+                top: 9%;
+            }
+
+            @include respond-below(xs) {
+                top: 9%;
+            }
+        }
+
+        img {
+
+            @include respond-below(md) {
+                height: auto;
+            }
+        }
+    }
+
+    &.sub-page {
+        // height: auto;
+
+        h1 {
+            // background: #2d2d2d38;
+            // height: 120px;
+            // width: 40%;
+            // margin: 0 auto;
+            // top: 40%;
+
+            top: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+    }
+
+    &.no-banner {
+        height: 500px;
+
+        @include respond-below(xl) {
+            height: 400px;
+        }
+
+        @include respond-below(lg) {
+            height: 390px;
+        }
+
+        @include respond-below(md) {
+            height: 370px;
+        }
+
+        @include respond-below(sm) {
+            height: 320px;
+        }
+
+        @include respond-below(xs) {
+            height: 320px;
+        }
+
+        h1 {
+            @include respond-below(sm) {
+                padding: 0 40px;
+                width: 100%;
+                text-align: center;
+                line-height: 36px;
+            }
+        }
+    }
+
+    .heroSwiper {
+
+        position: absolute;
+        z-index: 98;
+        width: 30%;
+        bottom: 0;
+        transform: translateY(-100%);
+        left: 170px;
+        background: rgba(12, 12, 12, 0.3411764706);
+        border-radius: 8px;
+        padding: 25px 30px;
+
+        @include respond-below(xl) {
+            width: 40%;
+            left: 140px;
+        }
+
+        @include respond-below(lg) {
+            width: 50%;
+        }
+
+        @include respond-below(md) {
+            width: 60%;
+            left: 80px;
+        }
+
+        @include respond-below(sm) {
+            width: 84%;
+            left: 50px;
+            padding: 25px 20px;
+        }
+
+        @include respond-below(xs) {
+            width: 80%;
+            left: 50px;
+            padding: 30px 20px;
+        }
+
+        .swiper-wrapper {
+
+            align-items: center;
+
+            .swiper-slide {
+
+
+                .main-head {
+                    color: #fff;
+                    // font-size: 2rem !important;
+                    font-weight: 700 !important;
+                    line-height: 33px;
+
+                    @include respond-below(xl) {
+                        // font-size: 2rem !important;
+                    }
+
+                    @include respond-below(lg) {
+                        // font-size: 1.6rem !important;
+                    }
+
+                    @include respond-below(md) {
+                        // font-size: 1.4rem !important;
+                    }
+
+                    @include respond-below(sm) {
+                        // font-size: 1.2rem !important;
+                        margin-bottom: 10px !important;
+                        line-height: 28px;
+                    }
+                }
+
+                p {
+                    color: #fff;
+                }
+
+                // .swiper-pagination {
+
+                //     .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+                //     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                //         width: 30px;
+                //         height: 3px;
+                //     }
+                // }
+            }
+        }
+    }
+
+    .social-media-hero {
+        position: absolute;
+        top: 57%;
+        transform: translateY(-50%);
+        left: 70px;
+        z-index: 9;
+
+        @include respond-below(md) {
+            left: 30px;
+        }
+
+        @include respond-below(sm) {
+            left: 20px;
+        }
+
+        @include respond-below(xs) {
+            left: 20px;
+        }
+
+        ul {
+            li {
+                list-style: none;
+                line-height: 38px;
+
+                a {
+                    text-decoration: none;
+
+                    i {
+                        font-size: 15px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+
+        @include respond-below(lg) {
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        @include respond-below(md) {
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        @include respond-below(sm) {
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
+
+    &.blog-list {
+        height: 70vh;
+    }
+}
+
+
+
+
+
+
+// =================================================  bg video =====================================================//
+.video-bg {
+    height: auto;
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    @include respond-below(xl) {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @include respond-below(lg) {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @include respond-below(md) {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @include respond-below(sm) {
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+
+
+
+}
+
+.video-bg::-webkit-media-controls {
+    display: none !important;
+}
+
+.video-overlay {
+    /* Span the full grid */
+    grid-area: var(--fullGrid);
+
+    /* Center Content */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+// =================================================  bg video =====================================================//
+
+@media screen and (max-width: 1530px) {
+
+    .swiper-slide .text-content .title {
+        font-size: 4rem;
+    }
+
+}
+
+
+@media screen and (max-width: 1365px) {
+
+    .swiper-slide .text-content .title {
+        font-size: 3.2rem;
+    }
+
+}
+
+/*======= Media queries (max-width: 1100px) =======*/
+@media screen and (max-width: 1100px) {
+
+    .swiper-slide .text-content .title {
+        font-size: 3em;
+    }
+
+
+
+    .swiper-slide .text-content {
+        margin: 0 80px;
+    }
+
+    .bg-slider-thumbs {
+        bottom: 3em;
+    }
+}
+
+/*======= Media queries (max-width: 785px) =======*/
+@media screen and (max-width: 785px) {
+
+
+    .media-icons {
+        margin-right: 20px;
+    }
+
+    .media-icons a {
+        font-size: 1.5em;
+    }
+
+    .swiper-slide .text-content {
+        margin: 0 20px;
+        top: 28%;
+    }
+
+    .swiper-slide .text-content .title {
+        font-size: 2em;
+    }
+
+    .swiper-slide .text-content .title span {
+        font-size: 0.35em;
+    }
+
+    .swiper-slide .text-content p {
+        font-size: 0.9em;
+        font-weight: 200;
+    }
+
+
+
+    .swiper-slide .text-content .read-btn {
+        font-size: 0.9em;
+        padding: 5px 15px;
+    }
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1280px) {
+    .home img {
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+
+
+
+
+// RTL START
+.rtl {
+    direction: rtl;
+    text-align: right;
+
+
+
+    .home {
+        .heroSwiper {
+            right: 170px;
+            margin: 0;
+
+            @include respond-below(md) {
+                right: 80px;
+            }
+
+            @include respond-below(sm) {
+                right: 45px;
+            }
+
+            @include respond-below(xs) {
+                right: 45px;
+            }
+        }
+
+        .social-media-hero {
+            right: 70px;
+
+            @include respond-below(md) {
+                right: 40px;
+            }
+
+            @include respond-below(sm) {
+                right: 20px;
+            }
+
+            @include respond-below(xs) {
+                right: 20px;
+            }
+        }
+    }
+}
+
+// RTL END

@@ -1,0 +1,141 @@
+.home-timeline-area {
+
+    background: $brand-color;
+    padding: 50px 0 70px 0;
+
+    @include respond-below(xl) {
+        padding: 80px 0 100px 0;
+    }
+
+    @include respond-below(lg) {
+        padding: 30px 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 20px 0 10px 0;
+    }
+    @include respond-below(xs) {
+        padding: 20px 0 10px 0;
+    }
+
+    h2 {
+        color: #fff;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+    .home-timeline {
+
+        padding-right: 80px;
+
+        @include respond-below(lg) {
+            padding-right: 30px;
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 50px 0;
+        }
+
+        h3 {
+            color: #fff;
+            margin: 0 0 20px 0;
+        }
+
+        h5 {
+          
+            color: #fff;
+
+
+
+
+        }
+
+        p {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+      
+  
+ 
+
+
+        .timelineSwiper {
+
+            .swiper-slide {
+                text-align: center;
+                border-radius: 6px;
+                position: relative;
+                background: $primary-color;
+                padding: 20px; 
+                height: 160px;
+
+                @include respond-below(xl)
+                {
+                    height: 170px;
+                }
+
+                @include respond-below(lg)
+                {
+                    height: 150px;
+                }
+
+                @include respond-below(md)
+                {
+                    height: 150px;
+                }
+
+                @include respond-below(sm)
+                {
+                    height: 140px;
+                }
+
+                @include respond-below(xs)
+                {
+                    height: 140px;
+                }
+
+
+                h5 {
+                    color: #fff;
+
+                }
+                h3 {
+                    color: #fff;
+
+                }
+                p {
+                    color: #fff;
+
+                }
+
+                 
+
+            }
+
+            .swiper-wrapper {
+                align-items: flex-start !important;
+            }
+
+
+            .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+            .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                width: 25px !important;
+                height: 4px !important;
+                border-radius: 0 !important;
+                visibility: inherit !important;
+                margin: 50px 5px 0 5px !important;
+                background: #fff;
+            }
+
+            .swiper-pagination {
+                position: relative !important;
+            }
+
+
+        }
+    
+    }
+
+}

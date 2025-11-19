@@ -1,0 +1,171 @@
+.service-boxes-home-area {
+    padding: 0;
+    position: relative;
+    z-index: 9;
+    bottom: 103px;
+
+    @include respond-below(xl) {
+        bottom: 82px;
+    }
+
+    @include respond-below(lg) {
+        bottom: 84px;
+    }
+
+    @include respond-below(md) {
+        bottom: 90px;
+    }
+
+    @include respond-below(sm) {
+        bottom: 100px;
+    }
+
+    @include respond-below(xs) {
+        bottom: 100px;
+    }
+
+
+    .service-boxes-home {
+        background: $primary-color;
+        border-radius: 8px;
+
+        .supplier-box {
+            padding: 45px 0px;
+            border-radius: 6px;
+
+            @include respond-below(xl) {
+                padding: 30px 0px;
+            }
+
+            @include respond-below(lg) {
+                padding: 30px 0px;
+            }
+
+            @include respond-below(md) {
+                padding: 40px 0px;
+            }
+
+            @include respond-below(sm) {
+                padding: 20px 15px;
+                margin: 30px 0 0 0;
+            }
+
+
+
+
+            .serviceiconSwiper {
+
+                padding: 0 20px;
+
+
+                .swiper-slide {
+                    text-align: center;
+                    border-radius: 6px;
+                    position: relative;
+                    border-radius: 6px;
+
+                    // img {
+                    //     width: 120px;
+                    //     height: auto;
+                    // }
+                    a {
+                        transition: all 0.5s ease-in-out;
+
+                        img {}
+
+                        h5 {
+                            color: #fff;
+                            padding: 20px 0 0 0;
+                        }
+
+                        &:hover {
+                            text-decoration: none;
+                            margin-left: 7px;
+                            transform: translateX(7px);
+                        }
+                    }
+
+                    figure {
+                        margin: 0 !important;
+                    }
+
+                }
+
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                    position: absolute;
+                    top: 60px;
+                    width: 0px;
+                    height: 40px;
+                    z-index: 10;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include respond-below(xl) {
+                        top: 53px;
+                    }
+
+                    @include respond-below(lg) {
+                        top: 55px;
+                    }
+
+                    @include respond-below(md) {
+                        top: 53px;
+                    }
+
+                    @include respond-below(sm) {
+                        top: 51px;
+                    }
+                }
+
+
+                .swiper-button-next:after,
+                .swiper-rtl .swiper-button-prev:after {
+                    content: 'next';
+                    font-size: 17px;
+                    color: #fff;
+                    font-weight: 600;
+                    background: $brand-color;
+                    padding: 20px 10px;
+
+                }
+
+                .swiper-button-prev:after,
+                .swiper-rtl .swiper-button-next:after {
+                    content: 'prev';
+                    font-size: 17px;
+                    color: #fff;
+                    font-weight: 600;
+                    background: $brand-color;
+                    padding: 20px 10px;
+
+                }
+
+                .swiper-button-next.swiper-button-disabled,
+                .swiper-button-prev.swiper-button-disabled {
+                    opacity: 1;
+                }
+
+
+            }
+
+
+
+        }
+    }
+}
+
+.hover-rotate {}
+
+.hover-rotate img {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.hover-rotate:hover img {
+    transform: scale(1.1) rotate(360deg);
+}

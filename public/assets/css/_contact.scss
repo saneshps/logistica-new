@@ -1,0 +1,277 @@
+.contact-adderess-area {
+    padding: 240px 350px 0 120px;
+    margin: 0 0 0 120px;
+
+    @include respond-below(xl) {
+        margin: 0 0 0 90px;
+        padding: 170px 350px 0 120px;
+    }
+
+    @include respond-below(lg) {
+        margin: 0px;
+        padding: 110px 350px 0 120px;
+    }
+
+    @include respond-below(md) {
+        margin: 0 0 0 40px;
+        padding: 50px 0px 0 0px;
+    }
+
+    @include respond-below(sm) {
+        margin: 30px 0 0 20px;
+        padding: 30px 0px 0 0px;
+    }
+
+    @include respond-below(xs) {
+        margin: 30px 0 0 20px;
+        padding: 30px 0px 0 0px;
+    }
+
+    h1 {
+        color: #fff !important;
+        position: inherit !important;
+        display: block !important;
+        margin: 0 0 50px 0;
+    }
+
+    .contact-adderess-box {
+        border-left: 1px solid $primary-color;
+        border-right: 1px solid $primary-color;
+        padding: 0 50px 0 60px;
+        margin: 0 140px 60px 50px;
+
+        @include respond-below(xl) {
+            padding: 0 50px 0 50px;
+            margin: 0 30px 0 0;
+        }
+
+        @include respond-below(lg) {
+            padding: 0 30px 0 30px;
+            margin: 0 30px 0 0;
+        }
+
+        @include respond-below(md) {
+            margin: 0 80px 60px 0;
+        }
+
+        @include respond-below(sm) {
+            margin: 0 20px 60px 0;
+            padding: 0px 10px 0 10px;
+        }
+
+        @include respond-below(xs) {
+            margin: 0 20px 60px 0;
+            padding: 0 10px 0 10px;
+        }
+
+        h4 {
+            color: #fff;
+            margin: 30px 0 20px 0;
+            background: $primary-color;
+            padding: 17px 10px 12px 20px;
+            border-radius: 10px 10px 0 0;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: #fff;
+            
+            @include respond-below(sm) {
+                font-size: 12px; 
+            }
+            @include respond-below(xs) {
+                font-size: 12px; 
+            }
+        }
+
+        .map-icon
+        {
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            margin: 0 0 40px 0;
+
+            a 
+            {
+                text-decoration: none;
+                display: flex;
+                i 
+                {
+                    color: #004B8E;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    .contact-form-area {
+        padding: 80px 0 0 160px;
+
+        @include respond-below(xl) {
+            padding: 80px 0 0 130px;
+        }
+
+        @include respond-below(lg) {
+            padding: 80px 0 0 70px;
+        }
+
+        @include respond-below(md) {
+            padding: 80px 30px 0 50px;
+        }
+
+        @include respond-below(sm) {
+            padding: 80px 20px 0 20px;
+        }
+
+        @include respond-below(xs) {
+            padding: 80px 20px 0 20px;
+        }
+
+        h2 {
+            color: #fff;
+            margin: 0 0 20px 0;
+        }
+
+        p {
+            color: #fff;
+            margin: 0 0 20px 0;
+            font-size: 17px;
+        }
+
+        .form-container {
+            font-size: 0;
+            overflow: hidden;
+        }
+
+
+
+        .form-container .form-horizontal {
+            width: 60%;
+            display: inline-block;
+        }
+
+
+
+        .form-container .form-horizontal .form-group {
+            margin: 0 0 10px;
+        }
+
+        .form-container .form-horizontal .form-control {
+            color: #fff;
+            background: transparent;
+            padding: 12px 0;
+            margin-bottom: 25px;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .2);
+            border-radius: 0;
+        }
+
+        .form-container .form-horizontal .form-control:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .form-container .form-horizontal .form-control::placeholder {
+            color: #ccc;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .form-container .form-horizontal .form-group select.form-control option {
+            color: #000;
+            background: #fff;
+        }
+
+        .form-container .form-horizontal .btn {
+            color: #fff;
+            background: #4dae3c;
+            font-size: 18px;
+            letter-spacing: 1px;
+            border-radius: 50px;
+            padding: 8px 25px;
+            border: none;
+            transition: all .4s ease;
+        }
+
+        .form-container .form-horizontal .btn:hover {
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+        }
+
+        .form-container .form-horizontal .btn:focus {
+            outline: none;
+        }
+
+        @media only screen and (max-width:576px) {
+            .form-container .form-img {
+                width: 100%;
+                height: 400px;
+            }
+
+            .form-container .form-horizontal {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.rtl {
+    .contact-form-area {
+        padding: 80px 150px 0 50px;
+
+        @include respond-below(xl) {
+            padding: 80px 70px 0 30px;
+        }
+
+        @include respond-below(lg) {
+            padding: 80px 40px 0 20px;
+        }
+
+        @include respond-below(md) {
+            padding: 80px 50px 0 40px;
+        }
+
+        @include respond-below(sm) {
+            padding: 80px 20px 0 20px;
+        }
+
+    }
+
+    .contact-adderess-area {
+        h1 {
+            margin: 0 90px 50px 0;
+
+            @include respond-below(xl) {
+                margin: 0 30px 50px 0;
+            }
+
+            @include respond-below(lg) {
+                margin: 0 30px 50px 0;
+            }
+
+            @include respond-below(md) {
+                margin: 0 50px 50px 0;
+            }
+
+            @include respond-below(sm) {
+                margin: 0 20px 50px 0;
+            }
+        }
+
+        .contact-adderess-box {
+
+            @include respond-below(md) {
+                margin: 0 50px 60px 40px;
+            }
+
+            @include respond-below(sm) {
+                margin: 0 20px 60px 0px;
+            }
+        }
+    }
+}

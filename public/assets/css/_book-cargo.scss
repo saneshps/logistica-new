@@ -1,0 +1,66 @@
+.home-book-cargo-area {
+    background: url(../img/book-cargo/book-your-cargo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond-below(xl) {
+        padding: 80px 0 100px 0;
+    }
+
+    @include respond-below(lg) {
+        padding: 80px 0;
+        height: 410px;
+    }
+
+    @include respond-below(md) {
+        padding: 40px 0 100px 0;
+        height: 410px;
+    }
+
+    @include respond-below(sm) {
+        padding: 40px 0 100px 0;
+        height: 400px;
+    }
+
+    @include respond-below(xs) {
+        padding: 40px 0 100px 0;
+        height: 400px;
+    }
+
+    .book-cargo-second {
+        h4 {
+            color: #fff;
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+
+}
+
+// RTL START
+.rtl {
+    direction: rtl;
+    text-align: right;
+
+    .home-book-cargo-area {
+        .book-cargo-second {
+            order: -1;
+
+        }
+    }
+
+
+}
+
+// RTL END

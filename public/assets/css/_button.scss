@@ -1,0 +1,516 @@
+.button-center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: #fff;
+    font-size: 16px !important;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 8px 15px !important;
+    border-radius: 0;
+    border: 1px solid $primary-color !important;
+    position: relative;
+    z-index: 1;
+    transition: all 0.6s ease-out 0.0s;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+}
+
+.btn:before,
+.btn:after,
+.btn span:before,
+.btn span:after {
+    content: "";
+    background: $primary-color;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: -1;
+    transition: all 0.4s ease 0s;
+}
+
+.btn:after,
+.btn span:before {
+    left: auto;
+    right: 0;
+}
+
+.btn span:before,
+.btn span:after {
+    transition-delay: 0.4s;
+}
+
+.btn:hover:before,
+.btn:hover:after,
+.btn:hover span:before,
+.btn:hover span:after {
+    width: 100%;
+}
+
+
+
+
+//   button 2
+
+.btn2 {
+    border-radius: 0;
+    text-transform: capitalize;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease 0s;
+
+    i {
+        font-size: 23px;
+        position: relative;
+        top: 4px;
+        left: 12px;
+
+        @include respond-below(md) {
+            font-size: 16px;
+            margin-right: 5px;
+            top: 0px;
+        }
+
+        @include respond-below(sm) {
+            font-size: 16px;
+            margin-right: 5px;
+            top: 0px;
+        }
+    }
+
+    .fa-file-pdf {
+        font-size: 23px;
+        margin-right: 0;
+        position: relative;
+        top: 2px;
+    }
+}
+
+.btn2:before {
+    content: "";
+    width: 210%;
+    height: 210%;
+    position: absolute;
+    top: -120px;
+    left: 30px;
+    transform: skew(67deg);
+    z-index: -1;
+    transition: all 0.4s ease 0s;
+}
+
+.btn2:hover:before {
+    top: -20px;
+    left: -52px;
+}
+
+.btn2.red {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 13px 18px;
+    border-radius: 30px;
+    margin-left: 25px;
+    text-decoration: underline;
+
+    @include respond-below(md) {
+        font-size: 15px;
+        padding: 11px 11px;
+        border-radius: 30px;
+        margin-left: 10px;
+    }
+
+    @include respond-below(sm) {
+        font-size: 14px;
+        padding: 9px 11px;
+        border-radius: 30px;
+        margin-left: 13px;
+    }
+}
+
+.btn2.red:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .btn2 {
+        margin-bottom: 15px;
+    }
+}
+
+//   button 2
+
+// button 3
+.btn3 {
+    color: #fff;
+    font-size: 16px !important;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 12px 20px !important;
+    border-radius: 0;
+    border: 1px solid #fff !important;
+    position: relative;
+    z-index: 1;
+    transition: all 0.6s ease-out 0.0s;
+}
+
+.btn3:hover,
+.btn3:focus {
+    color: $brand-color;
+    text-decoration: none;
+}
+
+.btn3:before,
+.btn3:after,
+.btn3 span:before,
+.btn3 span:after {
+    content: "";
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: -1;
+    transition: all 0.4s ease 0s;
+}
+
+.btn3:after,
+.btn3 span:before {
+    left: auto;
+    right: 0;
+}
+
+.btn3 span:before,
+.btn3 span:after {
+    transition-delay: 0.4s;
+}
+
+.btn3:hover:before,
+.btn3:hover:after,
+.btn3:hover span:before,
+.btn3:hover span:after {
+    width: 100%;
+}
+
+// button 3
+
+
+// button 4 About Start 
+.btn4 {
+    border-radius: 0;
+    text-transform: capitalize;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease 0s;
+
+    i {
+        font-size: 50px;
+        position: relative;
+        top: 4px;
+
+        @include respond-below(xl) {
+            font-size: 50px;
+            top: 0px;
+        }
+
+        @include respond-below(lg) {
+            font-size: 50px;
+            top: 0px;
+        }
+
+        @include respond-below(md) {
+            font-size: 50px;
+            top: 0px;
+        }
+
+        @include respond-below(sm) {
+            font-size: 30px;
+            top: 0px;
+        }
+
+        @include respond-below(xs) {
+            font-size: 30px;
+            top: 0px;
+        }
+    }
+
+    .fa-file-pdf {
+        font-size: 23px;
+        margin-right: 0;
+        position: relative;
+        top: 2px;
+    }
+}
+
+.btn4:before {
+    content: "";
+    width: 210%;
+    height: 210%;
+    position: absolute;
+    top: -120px;
+    left: 30px;
+    transform: skew(67deg);
+    z-index: -1;
+    transition: all 0.4s ease 0s;
+}
+
+.btn4:hover:before {
+    top: -20px;
+    left: -52px;
+}
+
+.btn4.abt {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 13px 18px;
+    border-radius: 30px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+
+    @include respond-below(md) {
+        font-size: 15px;
+        padding: 11px 11px;
+        border-radius: 30px;
+        margin-left: 10px;
+    }
+
+    @include respond-below(sm) {
+        font-size: 14px;
+        padding: 9px 11px;
+        border-radius: 30px;
+        margin-left: 13px;
+    }
+}
+
+.btn4.abt:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .btn4 {
+        margin-bottom: 15px;
+    }
+}
+
+// button About End
+
+
+
+
+
+// button 5
+.btn5 {
+    color: #fff;
+    font-size: 16px !important;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 12px 20px !important;
+    border-radius: 0;
+    border: 1px solid #fff !important;
+    position: relative;
+    z-index: 1;
+    transition: all 0.6s ease-out 0s;
+    background: #001d30;
+    cursor: pointer;
+}
+
+.btn5:hover,
+.btn5:focus {
+    color: $brand-color;
+    text-decoration: none;
+}
+
+.btn5:before,
+.btn5:after,
+.btn5 span:before,
+.btn5 span:after {
+    content: "";
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: -1;
+    transition: all 0.4s ease 0s;
+}
+
+.btn5:after,
+.btn5 span:before {
+    left: auto;
+    right: 0;
+}
+
+.btn5 span:before,
+.btn5 span:after {
+    transition-delay: 0.4s;
+}
+
+.btn5:hover:before,
+.btn5:hover:after,
+.btn5:hover span:before,
+.btn5:hover span:after {
+    width: 100%;
+}
+
+// button 5
+
+
+
+// button 6
+.btn6 {
+    color: #fff;
+    font-size: 16px !important;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 9px 20px !important;
+    margin: 0 0 0 13px;
+    border-radius: 6px;
+    border: 1px solid #fff !important;
+    position: relative;
+    z-index: 1;
+    transition: all 0.6s ease-out 0s;
+    background: $primary-color;
+    cursor: pointer;
+}
+
+.btn6:hover,
+.btn6:focus {
+    color: $brand-color;
+    text-decoration: none;
+    border: 1px solid $primary-color !important;
+    border-radius: 6px;
+}
+
+.btn6:before,
+.btn6:after,
+.btn6 span:before,
+.btn6 span:after {
+    content: "";
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: -1;
+    transition: all 0.4s ease 0s;
+}
+
+.btn6:after,
+.btn6 span:before {
+    left: auto;
+    right: 0;
+}
+
+.btn6 span:before,
+.btn6 span:after {
+    transition-delay: 0.4s;
+}
+
+.btn6:hover:before,
+.btn6:hover:after,
+.btn6:hover span:before,
+.btn6:hover span:after {
+    width: 100%;
+}
+
+// button 6
+
+
+
+// button enq
+.btnenq {
+    color: #fff;
+    font-size: 16px !important;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 9px 20px !important;
+    border-radius: 0;
+    border: 1px solid #fff !important;
+    position: relative;
+    z-index: 1;
+    transition: all 0.6s ease-out 0.0s;
+    background: none;
+    cursor: pointer;
+    background: $primary-color;
+
+    @include respond-below(sm) {
+        border: none !important;
+    }
+
+    @include respond-below(xs) {
+        border: none !important;
+    }
+
+    &.icon-type {
+
+        @include respond-below(sm) {
+            padding: 6px 9px !important;
+        }
+
+        @include respond-below(xs) {
+            padding: 6px 9px !important;
+        }
+    }
+}
+
+.btnenq:hover,
+.btnenq:focus {
+    color: $brand-color;
+    text-decoration: none;
+}
+
+.btnenq:before,
+.btnenq:after,
+.btnenq span:before,
+.btnenq span:after {
+    content: "";
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: -1;
+    transition: all 0.4s ease 0s;
+}
+
+.btnenq:after,
+.btnenq span:before {
+    left: auto;
+    right: 0;
+}
+
+.btnenq span:before,
+.btnenq span:after {
+    transition-delay: 0.4s;
+}
+
+.btnenq:hover:before,
+.btnenq:hover:after,
+.btnenq:hover span:before,
+.btnenq:hover span:after {
+    width: 100%;
+}
+
+// button enq

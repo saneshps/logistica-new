@@ -1,0 +1,61 @@
+.map-other-area {
+    overflow: hidden;
+    margin: 0 0 50px 0;
+
+    .map-other {
+        iframe {
+            height: 500px;
+
+            @include respond-below(xl) {
+                height: 510px;
+            }
+
+            @include respond-below(lg) {
+                height: 550px;
+            }
+
+            @include respond-below(md) {
+                height: 530px;
+            }
+
+            @include respond-below(sm) {
+                height: 290px;
+            }
+
+            @include respond-below(xs) {
+                height: 290px;
+            }
+        }
+    }
+
+    .map-other-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background: $primary-color;
+        margin: 0 0 6px 0;
+
+        h5 {
+            color: #fff;
+            line-height: 28px;
+            padding: 0 0 15px 40px;
+
+            @include respond-below(sm) {
+                padding: 20px 0 10px 20px;
+            }
+
+            @include respond-below(xs) {
+                padding: 20px 0 10px 20px;
+            }
+
+            a {
+                color: #fff;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

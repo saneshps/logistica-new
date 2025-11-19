@@ -1,0 +1,402 @@
+.career-area {
+
+    padding: 100px 0 100px 0;
+
+    @include respond-below(xl) {
+        padding: 80px 0 100px 0;
+    }
+
+    @include respond-below(lg) {
+        padding: 60px 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 40px 0 70px 0;
+    }
+
+    .career-head {
+        text-align: center;
+
+        h2 {
+            color: #fff;
+        }
+
+        p {
+            color: #fff;
+            font-size: 17px;
+            margin: 15px 0 0 0;
+
+            @include respond-below(sm) {
+                text-align: left;
+            }
+        }
+
+        h3 {
+            color: #fff;
+            text-align: left;
+            margin: 40px 0 10px 0;
+        }
+
+        ul {
+            margin: 0 0 30px 0;
+
+            li {
+                list-style: square;
+                color: #c7c7c7;
+                position: relative;
+                text-align: left;
+                padding: 0 0 0 5px;
+                margin: 0 0 10px 40px;
+                line-height: 26px;
+                font-size: 17px;
+
+                @include respond-below(sm) {
+                    margin: 0 0 0 20px;
+                }
+
+                @include respond-below(xs) {
+                    margin: 0 0 0 15px;
+                }
+
+                i {
+                    margin: 6px 0 0 0;
+                    position: absolute;
+                    left: 15px;
+                    display: none;
+                }
+
+                .str {
+                    font-size: 18px;
+                    color: #fff;
+                    font-style: italic;
+                    font-weight: 800;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+
+.vacancies-area {
+    padding: 30px 0 100px 0;
+
+    @include respond-below(xl) {
+        padding: 10px 0 100px 0;
+    }
+
+    @include respond-below(lg) {
+        padding: 10px 0 60px 0;
+    }
+
+    @include respond-below(md) {
+        padding: 10px 0 60px 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 10px 0 70px 0;
+    }
+
+    @include respond-below(xs) {
+        padding: 10px 0 70px 0;
+    }
+
+
+    h2 {
+        color: #fff;
+        text-align: left;
+        margin: 0 0 30px 0;
+    }
+
+    .vacancies-box {
+        margin-bottom: 50px !important;
+        width: 70%;
+        margin: 0 auto;
+        padding: 40px 30px;
+        border-radius: 4px;
+        background: $primary-color;
+
+        @include respond-below(xl) {
+            width: 90%;
+            margin-bottom: 50px !important;
+        }
+
+        @include respond-below(lg) {
+            width: 100%;
+            margin-bottom: 40px !important;
+        }
+
+        @include respond-below(md) {
+            width: 100%;
+            margin-bottom: 40px !important;
+        }
+
+        @include respond-below(sm) {
+            width: 100%;
+            padding: 40px 0px;
+            margin-bottom: 30px !important;
+        }
+
+        @include respond-below(xs) {
+            width: 100%;
+            padding: 40px 0px;
+            margin-bottom: 30px !important;
+        }
+
+        .vacancies-first-area {
+            h3 {
+                color: #fff;
+            }
+
+            .para {
+                color: #fff;
+                font-size: 17px;
+
+                .hide {
+                    display: none;
+                }
+
+                ul {
+                    margin: 10px 0 0 0;
+
+                    li {
+                        list-style-type: disc;
+                        margin: 0 0 0 15px;
+                    }
+                }
+
+                .showmore {
+                    color: #333;
+                    background: #fff;
+                    padding: 2px 12px;
+                    border-radius: 7px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    display: table;
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+
+        .vacancies-second-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            @include respond-below(sm) {
+                margin: 30px 0 0 0;
+            }
+
+            h4 {
+                color: #fff;
+                margin: 0 0 20px 0;
+            }
+
+        }
+
+
+
+        .modal {
+            .modal-dialog {
+                max-width: 900px !important;
+
+                @include respond-below(md) {
+                    width: 80%;
+                }
+
+                @include respond-below(sm) {
+                    width: 100%;
+                }
+
+                @include respond-below(xs) {
+                    width: 100%;
+                }
+
+
+                .modal-content {
+                    padding: 30px 50px;
+
+                    @include respond-below(xl) {
+                        padding: 30px 50px;
+                    }
+
+                    @include respond-below(md) {
+                        padding: 20px 30px;
+                    }
+
+                    @include respond-below(sm) {
+                        padding: 20px 0px;
+                    }
+
+                    @include respond-below(xs) {
+                        padding: 20px 0px;
+                    }
+
+                    .modal-header {
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        padding: 0 10px 20px 0;
+
+                        button.close {
+                            float: right !important;
+                            font-size: 40px !important;
+                            color: #000 !important;
+                            text-shadow: 0 1px 0 #fff !important;
+                            opacity: 1 !important;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                            line-height: 28px !important;
+                            font-weight: 200 !important;
+                            border: 1px solid #333 !important;
+                            height: 30px !important;
+                            width: 30px !important;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            span {
+                                top: -4px !important;
+                                position: relative;
+                            }
+                        }
+                    }
+
+                    .modal-title {
+                        font-size: 2rem !important;
+                        margin: 0 0 6px 0;
+                    }
+
+                    p {
+                        font-size: 17px;
+                    }
+
+                    .form-bg {
+
+                        .form-container {
+                            font-size: 0;
+                            overflow: hidden;
+
+                            .form-group {
+                                .form-control {
+                                    margin-bottom: 25px;
+                                    border-radius: 0;
+
+                                    border-bottom: 1px solid #ccc;
+                                    border-top: none;
+                                    border-right: none;
+                                    border-left: none;
+                                    padding: 0 0 10px 5px;
+                                }
+
+                                i {
+                                    position: absolute;
+                                    left: 25px;
+                                    color: #c5c3c3;
+                                }
+                            }
+                        }
+                    }
+
+
+
+
+                }
+            }
+        }
+    }
+
+    .join-team-bottom-form {
+
+        background: #004B8E;
+        padding: 40px 40px;
+        border-radius: 8px;
+        margin-top: 80px;
+
+        @include respond-below(sm) {
+            margin-top: 40px;
+            padding: 40px 0px;
+        }
+
+        .form-bg {
+            .form-container {
+                h3 {
+                    color: #fff;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+
+                .form-horizontal {
+                    .form-group {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        i {
+                            position: absolute;
+                            left: 25px;
+                            color: #c5c3c3;
+                        }
+
+                        .form-control {
+                            padding: 10px 0 10px 35px;
+                            background: #004B8E;
+                            color: #c5c3c3;
+
+                            &::placeholder {
+                                color: #e1e1e1;
+                                font-weight: 100 !important;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+
+            .demo-submit {
+                background: #004B8E;
+                border: 1px solid #fff !important;
+
+                &:hover {
+                    background: #fff !important;
+                    color: #333;
+                    border: 1px solid #fff;
+                }
+
+                &::before {
+                    background: #fff;
+                }
+
+                &::after {
+                    background: #fff;
+                }
+            }
+
+            .fa-comment-alt {
+                position: absolute;
+                top: 14px;
+            }
+        }
+    }
+}
+
+.rtl {
+    .career-head {
+        h3 {
+            text-align: right;
+        }
+
+        ul {
+            li {
+                text-align: right;
+                margin: 0 20px 10px 20px;
+            }
+        }
+
+        p {
+            text-align: right !important;
+        }
+    }
+}

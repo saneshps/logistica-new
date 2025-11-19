@@ -1,0 +1,121 @@
+// home express intrest
+.home-express-interest-area {
+    margin: 60px 0;
+
+    @include respond-below(lg) {
+        margin: 20px 0;
+    }
+
+    @include respond-below(sm) {
+        margin: 20px 0;
+    }
+
+    @include respond-below(xs) {
+        margin: 20px 0;
+    }
+
+    .express-box {
+        padding: 50px 0;
+        background: $primary-color;
+        text-align: center;
+        color: #fff;
+        border-radius: 8px;
+
+        h5 {}
+
+        h2 {}
+
+        p {
+            width: 50%;
+            margin: 0 auto;
+            padding: 0 0 30px 0;
+
+            @include respond-below(xl) {
+                width: 50%;
+            }
+
+            @include respond-below(lg) {
+                width: 60%;
+            }
+
+            @include respond-below(md) {
+                width: 80%;
+            }
+
+            @include respond-below(sm) {
+                width: 90%;
+            }
+
+            @include respond-below(xs) {
+                width: 90%;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+// home express intrest
+
+
+// About express intrest
+.about-express-interest-area {
+    margin: 60px 0;
+
+    @include respond-below(lg) {
+        margin: 20px 0;
+    }
+
+    @include respond-below(sm) {
+        margin: 20px 0;
+    }
+
+    @include respond-below(xs) {
+        margin: 20px 0;
+    }
+
+    .express-box {
+        padding: 50px 0;
+        background: $primary-color;
+        text-align: center;
+        color: #fff;
+        border-radius: 8px;
+
+        h5 {}
+
+        h2 {}
+
+        p {
+            width: 50%;
+            margin: 0 auto;
+            padding: 0 0 30px 0;
+
+            @include respond-below(xl) {
+                width: 50%;
+            }
+
+            @include respond-below(lg) {
+                width: 60%;
+            }
+
+            @include respond-below(md) {
+                width: 80%;
+            }
+
+            @include respond-below(sm) {
+                width: 90%;
+            }
+
+            @include respond-below(xs) {
+                width: 90%;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+// About express intrest

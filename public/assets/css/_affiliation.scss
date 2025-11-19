@@ -1,0 +1,232 @@
+.home-affiliation-area {
+
+    background: $brand-color;
+    padding: 50px 0 70px 0;
+
+    @include respond-below(xl) {
+        padding: 80px 0 100px 0;
+    }
+
+    @include respond-below(lg) {
+        padding: 80px 0;
+    }
+
+    @include respond-below(sm) {
+        padding: 40px 0 70px 0;
+    }
+
+    .home-affiliation {
+
+        padding-right: 80px;
+
+        @include respond-below(lg) {
+            padding-right: 30px;
+        }
+
+        @include respond-below(md) {
+            padding: 0 0 50px 0;
+        }
+
+        h4 {
+            color: #fff;
+            margin: 0 0 20px 0;
+        }
+
+        h2 {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            color: #fff;
+
+
+
+
+        }
+
+        p {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        img {
+            width: auto;
+            margin-top: 20px;
+        }
+    }
+
+
+    .home-affiliation-content {
+
+
+        .affiliationSwiper {
+
+            .swiper-slide {
+                text-align: center;
+                border-radius: 6px;
+                position: relative;
+
+
+                img {
+                    width: 160px;
+                    height: 90px;
+                    object-fit: contain;
+                    margin: 0 0 30px 0;
+                    background: #fff;
+                    padding: 15px;
+
+                    @include respond-below(xl) {
+                        height: 80px;
+                    }
+
+                    @include respond-below(lg) {
+                        height: 80px;
+                    }
+
+                    @include respond-below(md) {
+                        height: 80px;
+                    }
+
+                    @include respond-below(sm) {
+                        height: auto;
+                    }
+                }
+
+                p {
+                    color: #fff;
+
+                }
+
+
+
+            }
+
+            .swiper-wrapper {
+                align-items: flex-start !important;
+            }
+
+
+            .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+            .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                width: 25px !important;
+                height: 4px !important;
+                border-radius: 0 !important;
+                visibility: inherit !important;
+                margin: 50px 5px 0 5px !important;
+                background: #fff;
+            }
+
+            .swiper-pagination {
+                position: relative !important;
+            }
+
+
+        }
+    }
+
+    .home-affiliation-row {
+        background: $primary-color;
+        padding: 50px 30px;
+        border-radius: 6px;
+    }
+
+}
+
+
+// ===================================================  about-affiliation-area start ====================================================
+.about-affiliation-area
+{
+
+    margin: 70px 0;
+    @include respond-below(xl) {
+        margin: 40px 0 70px 0;
+    }
+    @include respond-below(lg) {
+        margin: 40px 0 70px 0;
+    }
+    @include respond-below(md) {
+        margin: 0px 0 70px 0;
+    }
+    @include respond-below(sm) {
+        margin: 0px 0 70px 0;
+    }
+    @include respond-below(xs) {
+        margin: 0px 0 70px 0;
+    }
+
+
+
+    h2 
+    {
+        color: #fff;
+        margin: 0 0 15px 0;
+        text-align: center;
+    }
+    h4 
+    {
+        color: #fff;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+
+    .about-affiliation-main-boxes
+    {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 auto;
+
+        @include respond-below(xl) {
+            width: 94%;
+        }
+        @include respond-below(lg) {
+            width: 94%;
+        }
+        @include respond-below(md) {
+            width: 94%;
+        }
+        @include respond-below(sm) {
+            width: 96%;
+        }
+        @include respond-below(xs) {
+            width: 96%;
+        }
+
+        h5 
+        {
+            color: #fff;
+            text-align: center;
+            margin: 0px 0 20px 0;
+        }
+
+        .about-affiliation-box
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            margin: 0 0 40px 0;
+
+            @include respond-below(xs) {
+                margin: 0 0 10px 0;
+            }
+
+            img 
+            {
+                background: #fff;
+                padding: 10px 20px;
+                margin: 0 0 30px 0;
+                width: 170px;
+                height: 90px;
+                object-fit: contain;
+            }
+        }
+    }
+
+}
+// ===================================================  about-affiliation-area end ======================================================

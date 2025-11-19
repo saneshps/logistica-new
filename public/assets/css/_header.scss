@@ -1,0 +1,1624 @@
+header {
+    height: 100px;
+    left: 0;
+    padding: 0.5rem;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    transition: transform 0.6s;
+    width: 100%;
+    z-index: 500;
+    background: linear-gradient(180deg, black, transparent);
+
+    @include respond-below(lg) {
+        height: 80px;
+    }
+
+    @include respond-below(lg) {
+        height: 90px;
+    }
+
+    @include respond-below(sm) {
+        height: 70px;
+    }
+
+    @include respond-below(xs) {
+        height: 70px;
+    }
+
+    .logo {
+        position: absolute;
+        left: 80px;
+        width: 360px;
+        top: 10px;
+
+        @include respond-below(xl) {
+            left: 60px;
+            width: 310px;
+            top: 20px;
+        }
+
+        @include respond-below(lg) {
+            left: 40px;
+            width: 290px;
+            top: 10px;
+        }
+
+        @include respond-below(md) {
+            left: 40px;
+            width: 250px;
+            top: 20px;
+        }
+
+        @include respond-below(sm) {
+            left: 15px;
+            width: 160px;
+            top: 10px;
+        }
+
+        @include respond-below(xs) {
+            left: 15px;
+            width: 140px;
+            top: 10px;
+        }
+
+
+    }
+
+    .toggle-menus {
+        position: relative;
+
+        .menu-text {
+            position: absolute;
+            z-index: 99999;
+            top: 47px;
+            right: 142px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 300;
+
+            @include respond-below(xl) {
+                right: 115px;
+            }
+
+            @include respond-below(lg) {
+                right: 95px;
+            }
+
+            @include respond-below(md) {
+                right: 90px;
+            }
+
+            @include respond-below(sm) {
+                display: none;
+            }
+        }
+    }
+}
+
+main {
+    background-color: #485274;
+    height: 100vh;
+    padding-top: 80px;
+    transform-origin: left center;
+    transition: transform 0.6s 50ms;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+
+.nav-wrapper {
+    background-color: #000000b8;
+    box-shadow: -1px 0px 3px 0px rgba(0, 0, 0, 0.75);
+    height: 100%;
+    perspective: 1000px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform 0.6s, visibility 0.6s;
+    visibility: hidden;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+
+    .push-logo {
+        width: 330px;
+        height: auto;
+        position: absolute;
+        left: 340px;
+        top: 250px;
+
+        @include respond-below(xl) {
+            left: 200px;
+            width: 280px;
+            height: auto;
+            top: 310px;
+        }
+
+        @include respond-below(lg) {
+            left: 140px;
+            width: 240px;
+            height: auto;
+            top: 270px;
+        }
+
+        @include respond-below(md) {
+            left: 60px;
+            width: 190px;
+            height: auto;
+            top: 330px;
+        }
+
+        @include respond-below(sm) {
+            position: initial;
+            z-index: 9;
+            width: 110px;
+            height: 110px;
+            margin: 100px auto;
+        }
+    }
+
+    // ==================== NEW MENU START
+
+    .main-menu {
+        display: flex !important;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    #cssmenu,
+    #cssmenu ul,
+    #cssmenu ul li,
+    #cssmenu ul li a,
+    #cssmenu #head-mobile {
+        border: 0;
+        list-style: none;
+        line-height: 24px;
+        display: block;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+
+        box-sizing: border-box;
+
+        @include respond-below(xl) {
+            line-height: 20px;
+        }
+
+        @include respond-below(lg) {
+            line-height: 15px;
+        }
+
+        @include respond-below(md) {
+            line-height: 20px;
+        }
+    }
+
+    #cssmenu:after,
+    #cssmenu>ul:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0
+    }
+
+    #cssmenu #head-mobile {
+        display: none
+    }
+
+    #cssmenu {}
+
+    #cssmenu>ul>li {
+        float: left
+    }
+
+    #cssmenu>ul>li>a {
+        padding: 14px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: #ddd;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        @include respond-below(xl) {
+            padding: 14px;
+            font-size: 16px;
+        }
+
+        @include respond-below(lg) {
+            padding: 12px;
+            font-size: 14px;
+        }
+    }
+
+    #cssmenu>ul>li:hover>a,
+    #cssmenu ul li.active a {
+        color: #fff
+    }
+
+    #cssmenu>ul>li:hover,
+    #cssmenu ul li.active:hover,
+    #cssmenu ul li.active,
+    #cssmenu ul li.has-sub.active:hover {
+        background: $primary-color !important;
+        -webkit-transition: background .3s ease;
+        -ms-transition: background .3s ease;
+        transition: background .3s ease;
+    }
+
+    #cssmenu>ul>li.has-sub>a {
+        padding-right: 30px
+    }
+
+    #cssmenu>ul>li.has-sub>a:after {
+        position: absolute;
+        top: 29px;
+        right: 15px;
+        width: 16px;
+        height: 2px;
+        display: block;
+        background: #ddd;
+        content: "";
+
+        @include respond-below(xl) {
+            top: 25px !important;
+            right: 16px;
+            width: 14px !important;
+        }
+
+        @include respond-below(lg) {
+            top: 19px !important;
+            right: 17px;
+            width: 12px !important;
+        }
+    }
+
+    #cssmenu>ul>li.has-sub>a:before {
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        display: block;
+        width: 2px;
+        height: 16px;
+        background: #ddd;
+        content: "";
+        transition: all 0.25s ease;
+
+        @include respond-below(xl) {
+            top: 19px !important;
+            right: 22px;
+            height: 14px !important;
+        }
+
+        @include respond-below(lg) {
+            top: 14px !important;
+            right: 22px;
+            height: 12px !important;
+        }
+    }
+
+    #cssmenu>ul>li.has-sub:hover>a:before {
+        top: 23px;
+        height: 0
+    }
+
+    #cssmenu ul ul {
+        position: absolute;
+        left: -9999px
+    }
+
+    #cssmenu ul ul li {
+        height: 0;
+        -webkit-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+        background: $brand-color;
+        transition: all .25s ease
+    }
+    #cssmenu ul ul ul li {
+        height: 0;
+        -webkit-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+        background: $brand-color;
+        transition: all .25s ease;
+        width: 180%;
+
+        @include respond-below(xl) {
+            width: 180%;
+        }
+        @include respond-below(lg) {
+            width: 160%;
+        }
+        @include respond-below(md) {
+            width: 100%;
+          padding: 0 10px 0 0;
+        }
+    }
+
+    #cssmenu ul ul li:hover {}
+
+    #cssmenu li:hover>ul {
+        // left: auto;
+        // right: 278px;
+        // top: 134px;
+        // position: fixed;
+        // display: inline-block;
+
+        left: auto;
+        right: -171px;
+        top: 0;
+    }
+
+    .inner-menu {
+        right: -160px !important;
+    }
+
+    #cssmenu li:hover>ul>li {
+        height: auto;
+    }
+
+    #cssmenu ul ul ul {
+        margin-left: 100%;
+        top: 0
+    }
+
+    #cssmenu ul ul li a {
+        // border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+        padding: 11px;
+        width: 100%;
+        font-size: 16px;
+        text-decoration: none;
+        color: #ddd;
+        font-weight: 400;
+        text-transform: capitalize;
+
+        @include respond-below(xl) {
+            font-size: 16px;
+        }
+    }
+
+    #cssmenu ul ul li:last-child>a,
+    #cssmenu ul ul li.last-item>a {
+        border-bottom: 0
+    }
+
+    #cssmenu ul ul li:hover>a,
+    #cssmenu ul ul li a:hover {
+        color: #fff
+    }
+
+    #cssmenu ul ul li.has-sub>a:after {
+        position: absolute;
+        top: 16px;
+        right: 11px;
+        width: 8px;
+        height: 2px;
+        display: block;
+        background: #ddd;
+        content: ''
+    }
+
+    #cssmenu ul ul li.has-sub>a:before {
+        position: absolute;
+        top: 13px;
+        right: 14px;
+        display: block;
+        width: 2px;
+        height: 8px;
+        background: #ddd;
+        content: '';
+        -webkit-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+        transition: all .25s ease
+    }
+
+    #cssmenu ul ul>li.has-sub:hover>a:before {
+        top: 17px;
+        height: 0
+    }
+
+    #cssmenu ul ul li.has-sub:hover,
+    #cssmenu ul li.has-sub ul li.has-sub ul li:hover {
+        background: $primary-color;
+    }
+
+    #cssmenu ul ul ul li.active a {
+        border-left: 1px solid #333
+    }
+
+    #cssmenu>ul>li.has-sub>ul>li.active>a,
+    #cssmenu>ul ul>li.has-sub>ul>li.active>a {}
+
+    @media screen and (max-width:1000px) {
+
+        .nav-wrapper #cssmenu>ul>li>a {
+            padding: 13px !important;
+            font-size: 16px !important;
+            text-transform: uppercase !important;
+        }
+
+        #cssmenu li:hover>ul {
+            right: auto;
+        }
+
+        .inner-menu {
+            right: auto !important;
+        }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 46px;
+            text-align: center;
+            padding: 10px 0 0 0;
+            float: none
+        }
+
+        .logo2 {
+            display: none
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        #cssmenu {
+            width: 100%
+        }
+
+        #cssmenu ul {
+            width: 100%;
+            display: none
+        }
+
+        #cssmenu ul li {
+            width: 100%;
+            border-top: 1px solid #444
+        }
+
+        #cssmenu ul li:hover {
+            background: #363636;
+        }
+
+        #cssmenu ul ul li,
+        #cssmenu li:hover>ul>li {
+            height: auto
+        }
+
+        #cssmenu ul li a,
+        #cssmenu ul ul li a {
+            width: 100%;
+            border-bottom: 0;
+            text-transform: uppercase;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        #cssmenu>ul>li {
+            float: none
+        }
+
+        #cssmenu ul ul li a {
+            padding-left: 25px
+        }
+
+        #cssmenu ul ul li {
+            background: #001d30de !important;
+        }
+
+        #cssmenu ul ul li:hover {
+            background: #363636 !important
+        }
+
+        #cssmenu ul ul ul li a {
+            padding-left: 35px
+        }
+
+        #cssmenu ul ul li a {
+            color: #ddd;
+            background: none;
+            font-size: 14px;
+            padding: 7px;
+            text-transform: capitalize;
+        }
+
+        #cssmenu ul ul li:hover>a,
+        #cssmenu ul ul li.active>a {
+            color: #fff;
+            background: #00233c;
+        }
+
+        #cssmenu ul ul,
+        #cssmenu ul ul ul {
+            position: relative;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            text-align: left
+        }
+
+        #cssmenu>ul>li.has-sub>a:after,
+        #cssmenu>ul>li.has-sub>a:before,
+        #cssmenu ul ul>li.has-sub>a:after,
+        #cssmenu ul ul>li.has-sub>a:before {
+            display: none
+        }
+
+        #cssmenu #head-mobile {
+            display: block;
+            color: #ddd;
+            font-size: 12px;
+            font-weight: 700
+        }
+
+        .button {
+            width: 55px;
+            height: 46px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            z-index: 12399994;
+        }
+
+        .button:after {
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            display: block;
+            height: 4px;
+            width: 20px;
+            border-top: 2px solid #dddddd;
+            border-bottom: 2px solid #dddddd;
+            content: ''
+        }
+
+        .button:before {
+            -webkit-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            transition: all .3s ease;
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            display: block;
+            height: 2px;
+            width: 20px;
+            background: #ddd;
+            content: ''
+        }
+
+        .button.menu-opened:after {
+            -webkit-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            transition: all .3s ease;
+            top: 23px;
+            border: 0;
+            height: 2px;
+            width: 19px;
+            background: #fff;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg)
+        }
+
+        .button.menu-opened:before {
+            top: 23px;
+            background: #fff;
+            width: 19px;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg)
+        }
+
+        #cssmenu .submenu-button {
+            position: absolute;
+            z-index: 99;
+            right: 0;
+            top: 0;
+            display: block;
+            border-left: 1px solid #444;
+            height: 44px;
+            width: 46px;
+            cursor: pointer
+        }
+
+        #cssmenu .submenu-button.submenu-opened {
+            background: none;
+        }
+
+        #cssmenu ul ul .submenu-button {
+            height: 34px;
+            width: 34px
+        }
+
+        #cssmenu .submenu-button:after {
+            position: absolute;
+            top: 22px;
+            right: 19px;
+            width: 8px;
+            height: 2px;
+            display: block;
+            background: #ddd;
+            content: ''
+        }
+
+        #cssmenu ul ul .submenu-button:after {
+            top: 15px;
+            right: 13px
+        }
+
+        #cssmenu .submenu-button.submenu-opened:after {
+            background: #fff
+        }
+
+        #cssmenu .submenu-button:before {
+            position: absolute;
+            top: 19px;
+            right: 22px;
+            display: block;
+            width: 2px;
+            height: 8px;
+            background: #ddd;
+            content: ''
+        }
+
+        #cssmenu ul ul .submenu-button:before {
+            top: 12px;
+            right: 16px
+        }
+
+        #cssmenu .submenu-button.submenu-opened:before {
+            display: none
+        }
+
+        #cssmenu ul ul ul li.active a {
+            border-left: none
+        }
+
+        #cssmenu>ul>li.has-sub>ul>li.active>a,
+        #cssmenu>ul ul>li.has-sub>ul>li.active>a {
+            border-top: none
+        }
+    }
+
+    // ==================== NEW MENU
+}
+
+.nav-visible .nav-wrapper {
+    transform: translateX(0);
+    visibility: visible;
+    z-index: 99;
+}
+
+.nav {
+    position: relative;
+    transform: rotateY(90deg);
+    transform-origin: left center;
+    transition: transform 0.6s;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    list-style: none;
+    // flex-direction: column;
+    // justify-content: center;
+    align-items: start;
+    // padding-left: 90px !important;
+    padding: 100px 0 0 90px !important;
+    background: $brand-color;
+    width: 65vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+
+    @include respond-below(xl) {
+        padding-left: 60px !important;
+        width: 75vw;
+    }
+
+    @include respond-below(lg) {
+        padding-left: 60px !important;
+        width: 92vw;
+    }
+
+    @include respond-below(md) {
+        padding: 100px 40px 0 40px !important;
+        width: 58vw;
+        height: 100vh;
+    }
+
+    @include respond-below(sm) {
+        padding: 80px 10px 0 10px !important;
+        width: 100vw;
+        padding-top: 110px;
+        height: 100vh;
+        overflow: scroll;
+    }
+
+    @include respond-below(xs) {
+        padding: 80px 10px 0 10px !important;
+        width: 100vw;
+        padding-top: 110px;
+        height: 100vh;
+        overflow: scroll;
+    }
+
+    li {
+        @include respond-below(sm) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+}
+
+.nav-visible .nav {
+    transform: rotateY(0deg);
+}
+
+.nav li.active a {
+    // background-color: #212635;
+    color: $primary-color;
+}
+
+// .nav a {
+//     display: block;
+//     line-height: 80px;
+//     padding: 0;
+//     text-transform: uppercase;
+//     font-size: 2rem;
+//     color: #d9d9d9;
+//     font-weight: 400;
+
+//     @include respond-below(xl) {
+//         font-size: 5rem;
+//         padding: 3px 0;
+//     }
+
+//     @include respond-below(lg) {
+//         font-size: 4.2rem;
+//         padding: 0;
+//         line-height: 84px;
+//     }
+
+//     @include respond-below(md) {
+//         font-size: 3.8rem;
+//         padding: 3px 0;
+//         line-height: 60px;
+//     }
+
+//     @include respond-below(sm) {
+//         font-size: 2.6rem;
+//         padding: 10px 0;
+//         font-weight: 600;
+//         line-height: 38px;
+//     }
+// }
+
+.nav a:focus,
+.nav a:hover {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.nav-marker {
+    background-color: currentColor;
+    height: 2.8rem;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 3px;
+}
+
+.nav-marker:before {
+    border: 5px solid transparent;
+    border-right-color: inherit;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+}
+
+.color-1 {
+    color: deeppink;
+}
+
+button.close1 {
+    margin: 20px 60px 0 0 !important;
+    padding: 0 !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    opacity: 1 !important;
+    border: none !important;
+
+    @include respond-below(xl) {
+        margin: 20px 50px 0 0 !important;
+    }
+
+    @include respond-below(lg) {
+        margin: 15px 20px 0 0 !important;
+    }
+
+    @include respond-below(md) {
+        margin: 15px 20px 0 0 !important;
+    }
+
+    @include respond-below(sm) {
+        margin: 2px 0px 0 0 !important;
+    }
+
+    @include respond-below(xs) {
+        margin: 2px 0px 0 0 !important;
+    }
+
+}
+
+.close:not(:disabled):not(.disabled):focus-visible {
+    outline: none !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+
+.button-lines {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.lines {
+    background: #fff;
+    border-radius: 0;
+    display: inline-block;
+    height: 0.2rem;
+    width: 2rem;
+    position: relative;
+}
+
+// .lines:hover {
+//   background: #000;
+// }
+.lines:after,
+.lines:before {
+    background: #fff;
+    border-radius: 0;
+    display: inline-block;
+    height: 0.2rem;
+    width: 2rem;
+    content: "";
+    left: 0;
+    position: absolute;
+    margin-top: -5px;
+}
+
+.lines:after:hover,
+.lines:before:hover {
+    background: #000;
+}
+
+.lines:after {
+    top: 0.5rem;
+    margin-top: -14px;
+}
+
+.lines:before {
+    top: -0.5rem;
+}
+
+.button-lines-x .lines {
+    transition: background 0.3s ease;
+}
+
+.button-lines-x .lines:after,
+.button-lines-x .lines:before {
+    transform-origin: 50% 50% 0;
+    transition: top 0.3s 0.4s ease, transform 0.3s ease;
+}
+
+.nav-visible .button-lines-x .lines {
+    background: transparent;
+}
+
+.nav-visible .button-lines-x .lines:after,
+.nav-visible .button-lines-x .lines:before {
+    top: 0;
+    transition: top 0.3s ease, transform 0.3s 0.3s ease;
+}
+
+.nav-visible .button-lines-x .lines:after {
+    transform: rotate3d(0, 0, 1, 45deg);
+    top: 8px;
+}
+
+.nav-visible .button-lines-x .lines:before {
+    transform: rotate3d(0, 0, 1, -45deg);
+}
+
+// ============================================= Lines   =================================================
+.wgl-body-lines {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wgl-body-lines span {
+    position: fixed;
+    z-index: 1;
+    width: 1px;
+    height: 100%;
+    background: #1a1a1a;
+
+}
+
+.wgl-body-lines span:nth-child(1) {
+    left: 16.6%;
+
+    @include respond-below(lg) {
+        left: 25%;
+    }
+
+    @include respond-below(md) {
+        left: 25%;
+    }
+
+    @include respond-below(sm) {
+        left: 30%;
+    }
+
+}
+
+.wgl-body-lines span:nth-child(2) {
+    left: 33.2%;
+
+    @include respond-below(lg) {
+        left: 50%;
+    }
+
+    @include respond-below(md) {
+        left: 50%;
+    }
+
+    @include respond-below(sm) {
+        left: 70%;
+    }
+
+}
+
+.wgl-body-lines span:nth-child(3) {
+    left: 49.8%;
+
+    @include respond-below(lg) {
+        left: 75%;
+    }
+
+    @include respond-below(md) {
+        left: 75%;
+    }
+
+    @include respond-below(sm) {
+        display: none;
+    }
+
+}
+
+.wgl-body-lines span:nth-child(4) {
+    left: 66.4%;
+
+    @include respond-below(lg) {
+        display: none;
+    }
+
+    @include respond-below(md) {
+        display: none;
+    }
+
+    @include respond-below(sm) {
+        display: none;
+    }
+
+}
+
+.wgl-body-lines span:nth-child(5) {
+    left: 83%;
+
+    @include respond-below(lg) {
+        display: none;
+    }
+
+    @include respond-below(md) {
+        display: none;
+    }
+
+    @include respond-below(sm) {
+        display: none;
+    }
+
+}
+
+// ============================================= Lines   =================================================
+// ============================================= Head Enquiry   =================================================
+.heade-enquiry-box {
+    .modal {
+        .modal-dialog {
+            max-width: 900px !important;
+
+            @include respond-below(md) {
+                width: 80%;
+            }
+
+            @include respond-below(sm) {
+                width: 98%;
+            }
+
+            @include respond-below(xs) {
+                width: 98%;
+            }
+
+
+            .modal-content {
+                padding: 30px 30px;
+
+                @include respond-below(xl) {
+                    padding: 30px 30px;
+                }
+
+                @include respond-below(md) {
+                    padding: 20px 30px;
+                }
+
+                @include respond-below(sm) {
+                    padding: 20px 0px;
+                }
+
+                @include respond-below(xs) {
+                    padding: 20px 0px;
+                }
+
+                .modal-header {
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    padding: 0 10px 20px 0;
+
+                    button.close {
+                        float: right !important;
+                        font-size: 40px !important;
+                        color: #000 !important;
+                        text-shadow: 0 1px 0 #fff !important;
+                        opacity: 1 !important;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        line-height: 28px !important;
+                        font-weight: 200 !important;
+                        border: 1px solid #333 !important;
+                        height: 30px !important;
+                        width: 30px !important;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        span {
+                            top: -4px !important;
+                            position: relative;
+                        }
+                    }
+                }
+
+                .modal-title {
+                    font-size: 2rem !important;
+                    margin: 0 0 6px 0;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+
+                .form-bg {
+
+                    .form-container {
+                        font-size: 0;
+                        overflow: hidden;
+
+                        .form-group {
+                            .form-control {
+                                margin-bottom: 25px;
+                                border-radius: 0;
+
+                                border-bottom: 1px solid #ccc;
+                                border-top: none;
+                                border-right: none;
+                                border-left: none;
+                                padding: 0 0 12px 5px;
+                            }
+
+                            i {
+                                position: absolute;
+                                left: 25px;
+                                color: #c5c3c3;
+                            }
+                        }
+                    }
+                }
+
+
+
+
+            }
+        }
+    }
+}
+
+
+.head-enquiry-button {
+    position: absolute !important;
+    right: 250px;
+    top: 25px;
+
+    @include respond-below(xl) {
+        right: 250px;
+    }
+
+    @include respond-below(lg) {
+        right: 200px;
+        top: 20px;
+    }
+
+    @include respond-below(md) {
+        right: 200px;
+    }
+
+    @include respond-below(sm) {
+        right: 103px;
+        top: 15px;
+    }
+
+    @include respond-below(xs) {
+        right: 103px;
+        top: 14px;
+    }
+
+    span {
+        i {
+            display: none;
+
+            @include respond-below(xl) {
+                display: none;
+            }
+
+            @include respond-below(lg) {
+                display: none;
+            }
+
+            @include respond-below(md) {
+                display: none;
+            }
+
+            @include respond-below(sm) {
+                display: block;
+                font-size: 22px;
+            }
+
+            @include respond-below(xs) {
+                display: block;
+                font-size: 22px;
+            }
+        }
+
+        a {
+            @include respond-below(xl) {
+                display: block;
+            }
+
+            @include respond-below(lg) {
+                display: block;
+            }
+
+            @include respond-below(md) {
+                display: block;
+            }
+
+            @include respond-below(sm) {
+                display: none;
+            }
+
+            @include respond-below(xs) {
+                display: none;
+            }
+        }
+
+    }
+}
+
+// ============================================= Head Enquiry   =================================================
+
+
+// ============================================= Sticky Nav   =================================================
+
+
+
+
+/* ================== sticky ==================== */
+.navbar-scroll {
+    background-color: $brand-color;
+    padding: 0;
+    position: fixed;
+    top: -3px;
+    z-index: 999;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 40%);
+    transition-duration: 0.6s;
+    height: 100px;
+
+    .close1 {
+
+        margin: 27px 60px 0 0 !important;
+
+        @include respond-below(xl) {
+            margin: 30px 35px 0 0 !important;
+        }
+
+        @include respond-below(lg) {
+            margin: 30px 15px 0 0 !important;
+        }
+
+        @include respond-below(md) {
+            margin: 30px 15px 0 0 !important;
+        }
+
+        @include respond-below(sm) {
+            margin: 10px 5px 0 0 !important;
+        }
+
+    }
+
+    .head-enquiry-button {
+        @include respond-below(xl) {
+            top: 30px;
+        }
+
+        @include respond-below(lg) {
+            top: 30px;
+        }
+
+        @include respond-below(md) {
+            top: 32px;
+        }
+
+        @include respond-below(sm) {
+            top: 12px;
+        }
+    }
+}
+
+
+.navbar-scroll .nav-item .nav-link {
+    color: black;
+}
+
+.navbar-scroll .header-btn {
+    color: #ffffff;
+    background-color: #fe4066;
+}
+
+.navbar-scroll .logo {
+    color: #000;
+    font-weight: 500;
+    top: 25px;
+
+    @include respond-below(xl) {
+        top: 35px;
+    }
+
+    @include respond-below(lg) {
+        top: 35px;
+    }
+
+    @include respond-below(md) {
+        top: 35px;
+    }
+
+    @include respond-below(sm) {
+        top: 18px;
+    }
+}
+
+.navbar-scroll .logo_area .two {
+    width: 220px;
+    display: block;
+    position: absolute;
+    left: 38px;
+    top: 0px;
+}
+
+.navbar-scroll .logo_area .one {
+    opacity: 0;
+    transform: rotateX(-45deg);
+    transition: opacity 150ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms, transform 150ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+}
+
+.navbar-scroll .inner_main_menu ul {
+    padding-top: 30px;
+}
+
+.navbar-scroll .inner_menu {
+    width: 1360px;
+}
+
+.navbar-scroll .inner_main_menu {
+    width: 1040px;
+    transform: top translate(-100%);
+}
+
+
+
+@media only screen and (min-width : 1200px) and (max-width : 1320px) {
+
+    .nav {
+        width: 82vw;
+        overflow: scroll;
+    }
+}
+
+@media only screen and (min-width : 1025px) and (max-width : 1440px) {
+
+    .title {
+        font-size: 2rem !important;
+    }
+
+    .navbar-scroll {
+        height: 95px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+    .title {
+        font-size: 1.8rem !important;
+    }
+
+    .main .tab-menu-link {
+        width: calc(100% / 2) !important;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+
+    .navbar-scroll {
+        height: 88px;
+        top: -20px;
+    }
+
+    .product h4 {
+        margin-top: 130px !important;
+    }
+
+
+    .pro-read {
+        bottom: -80px !important;
+        padding: 10px 0 !important;
+    }
+
+
+}
+
+@media only screen and (min-width : 150px) and (max-width : 767px) {
+    .navbar-scroll {
+        height: 70px;
+    }
+}
+
+/* ================== sticky ==================== */
+
+// ============================================= Sticky Nav   =================================================
+
+
+// RTL START
+.rtl {
+    direction: rtl;
+    text-align: right;
+
+    header {
+        text-align: left;
+
+        .logo {
+            right: 20px;
+        }
+
+        .head-enquiry-button {
+            left: 250px;
+            right: auto;
+
+            @include respond-below(sm) {
+                left: 120px;
+                top: 10px;
+            }
+
+            @include respond-below(xs) {
+                left: 120px;
+                top: 10px;
+            }
+        }
+
+        .js {
+            left: 160px;
+            right: auto;
+
+            @include respond-below(sm) {
+                left: 70px;
+                top: 11px;
+            }
+
+        }
+
+        button {
+            &.close1 {
+                margin: 20px 60px 0 60px !important;
+
+                @include respond-below(lg) {
+                    margin: 15px 60px 0 60px !important;
+                }
+
+                @include respond-below(sm) {
+                    margin: 0px !important;
+                }
+            }
+        }
+
+
+    }
+
+    .nav {
+        left: 0;
+        right: unset;
+    }
+
+    .nav-wrapper #cssmenu ul ul ul li
+    {
+        
+        @include respond-below(lg) {
+            width: 100%;
+        }
+    }
+
+    .nav-wrapper #cssmenu ul ul li a {
+        @include respond-below(md) {
+            text-align: right !important;
+        }
+
+        @include respond-below(sm) {
+            text-align: center !important;
+        }
+
+        @include respond-below(xs) {
+            text-align: center !important;
+        }
+
+
+    }
+
+    .nav-wrapper #cssmenu .submenu-button {
+
+        @include respond-below(md) {
+            left: 0 !important;
+            right: auto !important;
+        }
+    }
+
+    .nav-wrapper #cssmenu ul ul li.has-sub>a:before {
+        left: 14px !important;
+        right: auto !important;
+    }
+
+    .nav-wrapper #cssmenu ul ul li.has-sub>a:after {
+        left: 11px !important;
+        right: auto !important;
+    }
+
+    .nav-wrapper .inner-menu {
+        right: auto !important;
+    }
+
+    .nav-wrapper #cssmenu li:hover>ul {
+        right: 300px !important;
+        top: 0;
+        width: 100%;
+
+        @include respond-below(md) {
+            right: 0 !important;
+        }
+    }
+
+    .nav-wrapper #cssmenu>ul>li.has-sub>a:after {
+        left: 15px;
+        right: auto;
+    }
+
+    .nav-wrapper #cssmenu>ul>li.has-sub>a:before {
+        left: 20px;
+        right: auto;
+    }
+
+    .language-picker__flag {
+        display: block;
+    }
+
+    .btn2 i {
+        left: -20px;
+    }
+
+    .navbar-scroll {
+
+        @include respond-below(lg) {
+            height: 85px;
+        }
+
+
+        .close1 {
+            margin: 26px 60px 0 60px !important;
+
+            @include respond-below(xl) {
+                margin: 30px 60px 0 60px !important;
+            }
+
+            @include respond-below(sm) {
+                margin: 9px 0px 0 10px !important;
+            }
+
+            @include respond-below(xs) {
+                margin: 9px 0px 0 10px !important;
+            }
+
+
+        }
+
+        .js {
+
+            @include respond-below(lg) {
+                top: 34px;
+            }
+
+            @include respond-below(sm) {
+                top: 13px;
+            }
+
+            @include respond-below(xs) {
+                top: 13px;
+            }
+        }
+
+        .logo {
+            top: 30px;
+        }
+    }
+
+
+}
+
+// RTL END

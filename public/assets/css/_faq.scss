@@ -1,0 +1,177 @@
+.faq-area {
+
+    margin: 0 0 80px 0;
+
+    .accordion {
+        width: 100%;
+        position: relative;
+    }
+
+    .accordian-chk {
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 40px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        -khtml-appearance: none;
+        appearnace: none;
+        cursor: pointer;
+        box-sizing: border-box;
+        padding: 0 20px;
+        z-index: 2;
+        margin: 0px;
+    }
+
+    .accordion h4 {
+        background: $primary-color none;
+        border: 1px solid $primary-color !important;
+        position: relative;
+        padding: 13px 15px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: arial;
+        margin: 0;
+        z-index: 1;
+    }
+
+    .accordion h4 .acc-icon {
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #fff;
+        border-bottom: 5px solid transparent;
+    }
+
+    .accordion .accordian-chk:checked+h4>.acc-icon {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #fff;
+        border-top: 5px solid transparent;
+        top: 10px;
+    }
+
+    .accordion .accordian-chk:checked+h4+div.accordian-content {
+        opacity: 1;
+        -moz-transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        max-height: 1000px;
+        overflow: hidden;
+        padding: 15px;
+    }
+
+    .accordian-content {
+        opacity: 0;
+        padding: 15px;
+        overflow: hidden;
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        -moz-transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        border-right: 1px solid #3175c4;
+        border-left: 1px solid #3175c4;
+        margin-bottom: 2px;
+        color: #fff;
+
+        p {
+            color: #fff;
+        }
+
+
+
+        h2 {
+            color: #fff;
+        }
+
+        h3 {
+            color: #fff;
+        }
+
+        ul {
+            padding: 0 0 0 20px;
+
+            li {
+                list-style: square;
+                color: #c7c7c7;
+                position: relative;
+                text-align: left;
+                padding: 0 0 0 5px;
+                margin: 0 0 7px 10px;
+                line-height: 26px;
+                font-size: 17px;
+            }
+        }
+    }
+
+    &.services-faq {
+        margin: 30px 0 60px 0;
+
+        h2 {
+            color: #fff;
+            margin: 0 0 15px 0;
+        }
+
+        h5 {
+            font-weight: 600 !important;
+        }
+
+        .str {
+            font-size: 18px;
+            color: #fff;
+            font-style: italic;
+            font-weight: 800;
+            display: block;
+        }
+
+        p {
+            color: #c7c7c7;
+            font-size: 17px;
+        }
+
+        .faq-str {
+            font-size: 18px;
+            color: #fff;
+            font-style: italic;
+            font-weight: 800;
+        }
+    }
+
+
+}
+
+.rtl {
+    .faq-area {
+
+        .accordian-content {
+            ul {
+                li {
+                    text-align: right;
+                    padding: 0 10px 0 5px;
+                    margin: 0 15px 7px 10px;
+                }
+            }
+        }
+    }
+}
