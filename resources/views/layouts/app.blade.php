@@ -159,7 +159,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 footer-logo-img aos-animate" data-aos="fade-down-right" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer-logo-img footer-quick-links">
                     <img src="{{asset('assets/img/footer-logo.png')}}" alt="logistica logo">
                     <div class="footer-address">
                         @foreach($footer_branches as $footer_branch)
@@ -186,10 +186,10 @@
                         {{__('mail')}} : <a href="mailto:contactus@logistica-group.com"> contactus@logistica-group.com </a>
                     </p>
 
-                    <div class="col-xl-12 footer-subscribe aos-animate" data-aos="fade-down-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+                    <div class="col-xl-12 footer-subscribe">
 
                         <!-- social media -->
-                        <div class="social-media-footer aos-animate" data-aos="fade-down-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+                        <div class="social-media-footer">
                             <ul>
                                 <li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
                                 <li> <a href="#"> <i class="fab fa-facebook-f"></i></a> </li>
@@ -200,9 +200,8 @@
                         </div>
                         <!-- social media -->
                     </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12 footer-quick-links aos-animate" data-aos="fade-down-right" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+                </div> 
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer-quick-links">
                     <h4> {{__('quick_links')}} </h4>
                     <ul>
 
@@ -216,7 +215,7 @@
                         <li> <a href="{{asset('assets/Logistica_Profile_2024.pdf')}}" target="_blank"> {{__('our_profile')}} </a> </li>
 					</ul>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12 footer-quick-links aos-animate" data-aos="fade-down-right" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer-quick-links">
                     <h4> {{__('services')}}</h4>
                     <ul>
                         @foreach($services as $service)
@@ -231,11 +230,66 @@
 
                 </div>
 
+                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer-quick-links">
+                   <h4> Bahrain </h4>
+                    <ul class="footer-address-ul">
+
+                        <li><i class="fa-solid fa-location-dot"></i> ENKAY EXPRESS BAHRAIN W.L.L. <br>
+                            Office 111-112, Bldg 145, Road 2403, Block 224 <br>
+                            P.O.Box: 10642, Manama, Bahrain 
+                        </li>
+                        <li> <i class="fa-solid fa-phone"></i>  <a href="tel:+97317321250"> +973 17321250 / 80 / 81 / 82 (Airport office) </a> </li>
+                         <li> <i class="fa-brands fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=+971506565309&amp;text=Hello from Logistica!." target="_blank"> +97150 656 5309 </a> </li>
+                        <li> <i class="fa-solid fa-fax"></i> <a href="tel:+97317321260"> +973 17321260 </a> </li> 
+					</ul> 
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer-quick-links">
+                  
+                   <h4> Kuwait </h4>
+                    <ul class="footer-address-ul">
+
+                        <li><i class="fa-solid fa-location-dot"></i> ENKAY EXPRESS CO. S.P.C <br>
+                           Office No: 15, 16 - Waha Mall<br>
+                            Al Dajeej Farwaniya <br>
+                            P.O.Box 2273, Safat 13023, Kuwait.
+                        </li>
+                        <li> <i class="fa-solid fa-phone"></i> <a href="tel:+96522598401"> +965 2259 8401 </a> </li>
+                        <li> <i class="fa-brands fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=+971506565309&amp;text=Hello from Logistica!." target="_blank"> +97150 656 5309 </a> </li>
+                        <li> <i class="fa-solid fa-fax"></i> <a href="tel:+96522598402"> +965 2259 8402  </a> </li> 
+					</ul>
+                </div>
+
+                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer-quick-links">
+                    
+                    <h4> UAE </h4>
+                    <ul class="footer-address-ul">
+                         <li> <i class="fa-solid fa-location-dot"></i> ENKAY EXPRESS (BR. OF RAI LOGISTICA UAE LLC) <br>
+                           Jebel Ali Free Zone (South Zone II, Plot # S20106) <br>
+                            P.O. Box: 16844, Dubai, UAE
+                        </li>
+                        <li> <i class="fa-solid fa-phone"></i> <a href="tel:+97148111000"> +9714 811 1000 </a> </li>
+                        <li> <i class="fa-brands fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=+971506565309&amp;text=Hello from Logistica!." target="_blank"> +97150 656 5309 </a> </li>
+                        <li> <i class="fa-solid fa-fax"></i>  <a href="tel:+97148806470"> +9714 880 6470 </a> </li> 
+					</ul>
+                </div>
+
 
             </div>
 
 
         </div>
+        {{-- Phone and whatsapp icon --}}
+        <div class="phone-whatsapp-box"> 
+         <a class="wa-icon" href="https://api.whatsapp.com/send?phone=+971506565309&amp;text=Hello from Logistica!." target="_blank"> 
+            <img src="{{asset('assets/img/whatsapp-new.png')}}" alt="">
+            
+        </a>
+         <a href="tel:+971506565309">
+             <img src="{{asset('assets/img/phone-new.png')}}" alt=""> </a>
+         {{-- <a href="mailto:contactus@logistica-group.com"> <img src="{{asset('assets/img/email-new.png')}}" alt=""></a> --}}
+        </div>
+        {{-- Phone and whatsapp icon --}}
     </footer>
     <!-- ===================
            FOOTER AREA END

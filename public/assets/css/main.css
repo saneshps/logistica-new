@@ -5287,22 +5287,27 @@ h6 {
   }
 }
 .footer-area .footer-logo-img img {
-  width: 50%;
+  width: 55%;
+}
+@media (max-width: 1199px) {
+  .footer-area .footer-logo-img img {
+    width: 70%;
+  }
 }
 @media (max-width: 991px) {
   .footer-area .footer-logo-img img {
-    width: 50%;
+    width: 80%;
   }
 }
 @media (max-width: 639px) {
   .footer-area .footer-logo-img img {
-    width: 80%;
+    width: 65%;
     padding: 0;
   }
 }
 @media (max-width: 374px) {
   .footer-area .footer-logo-img img {
-    width: 80%;
+    width: 65%;
     padding: 0;
   }
 }
@@ -5349,21 +5354,25 @@ h6 {
 .footer-area .footer-logo-img .footer-tel a {
   text-decoration: none;
 }
+.footer-area .footer-quick-links {
+  margin: 0 0 30px 0;
+  border-bottom: 1px solid #ccc;
+}
 @media (max-width: 991px) {
   .footer-area .footer-quick-links {
-    margin: 0 0 0 18px;
+    margin: 0 0 30px 0px;
   }
 }
 @media (max-width: 639px) {
   .footer-area .footer-quick-links {
     padding: 0px 30px;
-    margin: 0 0 0 6px;
+    margin: 0 0 30px 0px;
   }
 }
 @media (max-width: 374px) {
   .footer-area .footer-quick-links {
     padding: 0px 30px;
-    margin: 0 0 0 6px;
+    margin: 0 0 30px 0px;
   }
 }
 .footer-area .footer-quick-links h4 {
@@ -5373,12 +5382,42 @@ h6 {
 }
 .footer-area .footer-quick-links ul li {
   list-style-type: disc;
-  line-height: 35px;
+  line-height: 30px;
+  margin: 0px 0 0 20px;
 }
 .footer-area .footer-quick-links ul li a {
   text-decoration: none;
   color: #004B8E;
   font-size: 18px;
+}
+.footer-area .footer-quick-links .footer-address-ul li {
+  list-style-type: none;
+  padding: 0 0 0 30px;
+  margin: 0 0 3px 0;
+}
+@media (max-width: 639px) {
+  .footer-area .footer-quick-links .footer-address-ul li {
+    padding: 0 0 0 25px;
+  }
+}
+.footer-area .footer-quick-links .footer-address-ul li i {
+  color: #004b8e;
+  font-size: 20px;
+  position: absolute;
+  left: 13px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 639px) {
+  .footer-area .footer-quick-links .footer-address-ul li i {
+    left: 22px;
+  }
+}
+.footer-area .footer-quick-links .footer-address-ul li a {
+  font-size: 16px;
 }
 .footer-area .footer-subscribe {
   padding: 10px 0 0 0;
@@ -5474,6 +5513,36 @@ h6 {
   font-size: 16px;
   color: #004B8E;
 }
+.footer-area .phone-whatsapp-box {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 639px) {
+  .footer-area .phone-whatsapp-box {
+    right: 10px;
+    bottom: 20px;
+  }
+}
+.footer-area .phone-whatsapp-box a {
+  text-decoration: none;
+}
+.footer-area .phone-whatsapp-box a img {
+  border-radius: 50%;
+  width: 50px;
+  padding: 9px;
+  margin: 4px 0;
+  border: 1px solid #004b8e;
+  background: #004b8e;
+}
+@media (max-width: 639px) {
+  .footer-area .phone-whatsapp-box a img {
+    width: 40px;
+  }
+}
 
 .footer-bottom {
   background: #001D30;
@@ -5499,7 +5568,7 @@ h6 {
   border-radius: 5px 0px 0px 5px;
 }
 .rtl .footer-area .footer-subscribe .searchTerm {
-  border: 1px solid #004B8E;
+  border: 1px solid #004b8e;
   border-radius: 0;
 }
 .rtl .footer-area .footer-quick-links ul li {
@@ -5513,8 +5582,44 @@ h6 {
 .rtl .footer-area .footer-country-box a img {
   margin: 0 7px 0 10px !important;
 }
+.rtl .footer-area .footer-quick-links .footer-address-ul li {
+  list-style-type: none;
+  padding: 0 30px 0 0;
+  margin: 0 0 3px 0;
+}
+@media (max-width: 639px) {
+  .rtl .footer-area .footer-quick-links .footer-address-ul li {
+    padding: 0 25px 0 0;
+  }
+}
+.rtl .footer-area .footer-quick-links .footer-address-ul li i {
+  color: #004b8e;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 639px) {
+  .rtl .footer-area .footer-quick-links .footer-address-ul li i {
+    right: 22px;
+  }
+}
+.rtl .footer-area .footer-quick-links .footer-address-ul li a {
+  font-size: 16px;
+}
 .rtl .bh-w-button-list {
   display: grid;
+}
+.rtl #top {
+  right: 30px;
+}
+.rtl .footer-area .phone-whatsapp-box {
+  left: 20px;
+  right: unset;
 }
 
 .map-area iframe {
