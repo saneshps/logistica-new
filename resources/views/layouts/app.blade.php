@@ -231,7 +231,7 @@
                 </div>
 
                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer-quick-links">
-                   <h4> Bahrain </h4>
+                   <h4>  {{__('Bahrain')}} </h4>
                     <ul class="footer-address-ul">
 
                         <li><i class="fa-solid fa-location-dot"></i> ENKAY EXPRESS BAHRAIN W.L.L. <br>
@@ -246,7 +246,7 @@
 
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer-quick-links">
                   
-                   <h4> Kuwait </h4>
+                   <h4>  {{__('Kuwait')}}</h4>
                     <ul class="footer-address-ul">
 
                         <li><i class="fa-solid fa-location-dot"></i> ENKAY EXPRESS CO. S.P.C <br>
@@ -262,7 +262,7 @@
 
                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer-quick-links">
                     
-                    <h4> UAE </h4>
+                    <h4>  {{__('UAE')}} </h4>
                     <ul class="footer-address-ul">
                          <li> <i class="fa-solid fa-location-dot"></i> ENKAY EXPRESS (BR. OF RAI LOGISTICA UAE LLC) <br>
                            Jebel Ali Free Zone (South Zone II, Plot # S20106) <br>
@@ -285,8 +285,8 @@
             <img src="{{asset('assets/img/whatsapp-new.png')}}" alt="">
             
         </a>
-         <a href="tel:+971506565309">
-             <img src="{{asset('assets/img/phone-new.png')}}" alt=""> </a>
+         {{-- <a href="tel:+971506565309">
+             <img src="{{asset('assets/img/phone-new.png')}}" alt=""> </a> --}}
          {{-- <a href="mailto:contactus@logistica-group.com"> <img src="{{asset('assets/img/email-new.png')}}" alt=""></a> --}}
         </div>
         {{-- Phone and whatsapp icon --}}
