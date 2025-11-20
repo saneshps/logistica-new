@@ -239,7 +239,7 @@
                             P.O.Box: 10642, Manama, Bahrain 
                         </li>
                         <li> <i class="fa-solid fa-phone"></i>  <a href="tel:+97317321250"> +973 17321250 / 80 / 81 / 82 (Airport office) </a> </li>
-                         <li> <i class="fa-brands fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=+971506565309&amp;text=Hello from Logistica!." target="_blank"> +97150 656 5309 </a> </li>
+                         <li> <i class="fa-brands fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=+971553468705&amp;text=Hello from Logistica!." target="_blank"> +971 55 346 87 05 </a> </li>
                         <li> <i class="fa-solid fa-fax"></i> <a href="tel:+97317321260"> +973 17321260 </a> </li> 
 					</ul> 
                 </div>
@@ -255,7 +255,7 @@
                             P.O.Box 2273, Safat 13023, Kuwait.
                         </li>
                         <li> <i class="fa-solid fa-phone"></i> <a href="tel:+96522598401"> +965 2259 8401 </a> </li>
-                        <li> <i class="fa-brands fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=+971506565309&amp;text=Hello from Logistica!." target="_blank"> +97150 656 5309 </a> </li>
+                        <li> <i class="fa-brands fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=+971553468705&amp;text=Hello from Logistica!." target="_blank"> +971 55 346 87 05 </a> </li>
                         <li> <i class="fa-solid fa-fax"></i> <a href="tel:+96522598402"> +965 2259 8402  </a> </li> 
 					</ul>
                 </div>
@@ -269,7 +269,7 @@
                             P.O. Box: 16844, Dubai, UAE
                         </li>
                         <li> <i class="fa-solid fa-phone"></i> <a href="tel:+97148111000"> +9714 811 1000 </a> </li>
-                        <li> <i class="fa-brands fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=+971506565309&amp;text=Hello from Logistica!." target="_blank"> +97150 656 5309 </a> </li>
+                        <li> <i class="fa-brands fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=+971553468705&amp;text=Hello from Logistica!." target="_blank"> +971 55 346 87 05 </a> </li>
                         <li> <i class="fa-solid fa-fax"></i>  <a href="tel:+97148806470"> +9714 880 6470 </a> </li> 
 					</ul>
                 </div>
@@ -281,11 +281,11 @@
         </div>
         {{-- Phone and whatsapp icon --}}
         <div class="phone-whatsapp-box"> 
-         <a class="wa-icon" href="https://api.whatsapp.com/send?phone=+971506565309&amp;text=Hello from Logistica!." target="_blank"> 
+         <a class="wa-icon" href="https://api.whatsapp.com/send?phone=+971553468705&amp;text=Hello from Logistica!." target="_blank"> 
             <img src="{{asset('assets/img/whatsapp-new.png')}}" alt="">
             
         </a>
-         {{-- <a href="tel:+971506565309">
+         {{-- <a href="tel:+971553468705">
              <img src="{{asset('assets/img/phone-new.png')}}" alt=""> </a> --}}
          {{-- <a href="mailto:contactus@logistica-group.com"> <img src="{{asset('assets/img/email-new.png')}}" alt=""></a> --}}
         </div>
