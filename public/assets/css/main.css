@@ -3281,7 +3281,7 @@ h6 {
 }
 .service-content-area .service-box-content {
   color: #fff;
-  padding: 0 150px 0 20px;
+  padding: 0 50px 0 20px;
 }
 @media (max-width: 1199px) {
   .service-content-area .service-box-content {
@@ -3443,7 +3443,7 @@ h6 {
   }
 }
 .warehouse-boxes-area .warehouse-box {
-  background: linear-gradient(180deg, #022747, #004B8E);
+  background: linear-gradient(180deg, #022747, #004b8e);
   opacity: 0.8;
   height: 260px;
   border-radius: 8px;
@@ -3455,7 +3455,7 @@ h6 {
   margin: 0 0 50px 0;
 }
 .warehouse-boxes-area .warehouse-box:hover {
-  background: linear-gradient(359deg, #022747, #004B8E);
+  background: linear-gradient(359deg, #022747, #004b8e);
 }
 @media (max-width: 1199px) {
   .warehouse-boxes-area .warehouse-box {
@@ -4324,9 +4324,6 @@ h6 {
     padding: 0 15px;
   }
 }
-.home-social-feeds-area .social-feeds-slides .social-feeds-box {
-  /*swiper  close here */
-}
 .home-social-feeds-area .social-feeds-slides .social-feeds-box .swiper-container {
   margin: 0 auto;
   position: relative;
@@ -4808,6 +4805,9 @@ h6 {
 }
 .home-social-feeds-area .social-feeds-slides .social-feeds-box .swiper-container-coverflow .swiper-wrapper {
   -ms-perspective: 1200px;
+}
+.home-social-feeds-area .social-feeds-slides .social-feeds-box {
+  /*swiper  close here */
 }
 .home-social-feeds-area .social-feeds-slides .social-feeds-box .col {
   padding: 0;

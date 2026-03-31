@@ -1,5 +1,4 @@
 .home-services-area {
-
     padding: 60px 0 50px 0;
 
     @include respond-below(sm) {
@@ -47,18 +46,21 @@
         }
     }
 
-    .service-box-pad-main {}
+    .service-box-pad-main {
+    }
 
     .box {
         background: #333;
-        font-family: 'Zilla Slab', serif;
+        font-family: "Zilla Slab", serif;
         text-align: center;
         position: relative;
         transition: all 0.35s ease-in-out;
     }
 
     .box:hover {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow:
+            0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .box:before {
@@ -168,29 +170,21 @@
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
     }
 
-    @media only screen and (max-width:990px) {
+    @media only screen and (max-width: 990px) {
         .box {
             margin: 0 0 10px;
         }
     }
 
-    @media only screen and (max-width:767px) {
+    @media only screen and (max-width: 767px) {
         .box {
             margin: 0 0 10px;
         }
     }
-
-
-
-
-
 }
-
-
 
 // =============================================== SERVICE START =================================================
 .service-content-area {
-
     padding: 10px 0 60px 0;
 
     @include respond-below(sm) {
@@ -201,10 +195,9 @@
         padding: 10px 0 30px 0;
     }
 
-
     .service-box-content {
         color: #fff;
-        padding: 0 150px 0 20px;
+        padding: 0 50px 0 20px;
 
         @include respond-below(lg) {
             padding: 0 40px 0 20px;
@@ -233,8 +226,6 @@
         h4 {
             padding: 20px 0 10px 0;
         }
-
-
 
         .serv-1 {
             padding: 0 0 0 20px;
@@ -316,7 +307,7 @@
 
         &::after {
             position: absolute;
-            content: '';
+            content: "";
             background: $primary-color;
             height: 100%;
             width: 2px;
@@ -346,7 +337,7 @@
                 padding: 0 0 0 45px;
 
                 i {
-                    animation: move .3s ease-in-out alternate infinite;
+                    animation: move 0.3s ease-in-out alternate infinite;
                     color: $primary-color;
                     position: absolute;
                     margin: 10px 0 0 0;
@@ -356,7 +347,7 @@
                 a {
                     color: #fff;
                     font-size: 18px;
-                    transition: all .5s ease-in-out;
+                    transition: all 0.5s ease-in-out;
 
                     &:hover {
                         text-decoration: none;
@@ -378,7 +369,6 @@
 }
 
 // =============================================== SERVICE END ===================================================
-
 
 // =========================== ANIMATION START ==============
 @-webkit-keyframes move {
@@ -407,14 +397,11 @@
 
 // =========================== ANIMATION END ================
 
-
 // ======================================================== WARHOUSE START ================================================
 .warehouse-boxes-area {
-
     .warehouse-box {
-
-        background: linear-gradient(180deg, #022747, #004B8E);
-        opacity: .8;
+        background: linear-gradient(180deg, #022747, #004b8e);
+        opacity: 0.8;
         height: 260px;
         border-radius: 8px;
         display: flex;
@@ -425,7 +412,7 @@
         margin: 0 0 50px 0;
 
         &:hover {
-            background: linear-gradient(359deg, #022747, #004B8E);
+            background: linear-gradient(359deg, #022747, #004b8e);
         }
 
         @include respond-below(lg) {
@@ -502,7 +489,6 @@
                     padding: 0 50px 0 0px;
                     position: relative;
 
-
                     i {
                         right: 10px;
                         animation: none;
@@ -541,14 +527,12 @@
                 }
             }
 
-
             ol {
                 li {
                     padding: 0 20px 0 0px;
                     position: relative;
                     text-align: right;
                     margin: 0 19px 0 0;
-
 
                     i {
                         right: 10px;
@@ -571,7 +555,6 @@
                     text-align: right;
                     margin: 0 19px 0 0;
 
-
                     i {
                         right: 10px;
                         animation: none;
@@ -585,8 +568,6 @@
                     }
                 }
             }
-
-
         }
     }
 }
