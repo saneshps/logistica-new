@@ -197,10 +197,10 @@
 
     .service-box-content {
         color: #fff;
-        padding: 0 50px 0 20px;
+        padding: 0 10px 0 20px;
 
         @include respond-below(lg) {
-            padding: 0 40px 0 20px;
+            padding: 0 10px 0 20px;
         }
 
         @include respond-below(sm) {
@@ -209,6 +209,10 @@
 
         @include respond-below(xs) {
             padding: 0 20px;
+        }
+
+        ul {
+            padding-left: 20px;
         }
 
         p {

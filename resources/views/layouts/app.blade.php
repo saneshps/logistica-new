@@ -213,6 +213,7 @@
                         <li> <a href="{{route('faq', [$country_code,app()->getLocale()])}}"> {{__('faq')}} </a> </li>
 						<li> <a href="{{route('service', [$country_code,app()->getLocale(),'dma-tariff'])}}"> {{__('dma-tariff')}} </a> </li>
                         <li> <a href="{{asset('assets/Logistica_Profile_2024.pdf')}}" target="_blank"> {{__('our_profile')}} </a> </li>
+                        <li> <a href="https://apps.zybotech.com/tracking/Home.aspx" target="_blank"> Logistica Client Portal </a> </li>
 					</ul>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 footer-quick-links">

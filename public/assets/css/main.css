@@ -3281,11 +3281,11 @@ h6 {
 }
 .service-content-area .service-box-content {
   color: #fff;
-  padding: 0 50px 0 20px;
+  padding: 0 10px 0 20px;
 }
 @media (max-width: 1199px) {
   .service-content-area .service-box-content {
-    padding: 0 40px 0 20px;
+    padding: 0 10px 0 20px;
   }
 }
 @media (max-width: 639px) {
@@ -3297,6 +3297,9 @@ h6 {
   .service-content-area .service-box-content {
     padding: 0 20px;
   }
+}
+.service-content-area .service-box-content ul {
+  padding-left: 20px;
 }
 .service-content-area .service-box-content p {
   font-size: 17px;
