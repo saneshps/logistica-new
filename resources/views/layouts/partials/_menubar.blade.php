@@ -26,12 +26,12 @@
                         @endphp
 
                         @if ($services_sub_count[$i] != 0)
-                        <li><a href='{{route("service",[$country_code,app()->getLocale(),$service->$slug])}}'> {{$service->$name}} </a>
+                        <li><a href='{{route("service",[$country_code,app()->getLocale(),@$service->$slug])}}'> {{$service->$name}} </a>
                             <ul class="inner-menu">
 
                                 @foreach ($services_sub as $s_sub)
                                 @if ($service->id == $s_sub->parent_id)
-                                <li><a href="{{route('service', [$country_code,app()->getLocale(), $s_sub->$slug])}}"> {{$s_sub->$name}} </a></li>
+                                <li><a href="{{route('service', [$country_code,app()->getLocale(), @$s_sub->$slug])}}"> {{$s_sub->$name}} </a></li>
                                 @endif
                                 @endforeach
 
@@ -39,7 +39,7 @@
 
                         </li>
                         @else
-                        <li><a href=' {{route("service",[$country_code,app()->getLocale(),$service->$slug])}}'> {{$service->$name}} </a> </li>
+                        <li><a href=' {{route("service",[$country_code,app()->getLocale(),@$service->$slug])}}'> {{$service->$name}} </a> </li>
                         @endif
                         @php
                         $i++;
@@ -48,12 +48,13 @@
                         @endforeach
                         @else
                         @foreach($services as $service)
+                        {{$service}}
 
                         @php
                         $name = 'name_'.$current_language;
                         $slug = 'slug_'.$current_language;
                         @endphp
-                        <li><a href=' {{route("service",[$country_code,app()->getLocale(),$service->$slug])}}'> {{$service->$name}} </a> </li>
+                        <li><a href=' {{route("service",[$country_code,app()->getLocale(),@$service->$slug])}}'> {{$service->$name}} </a> </li>
 
                         @endforeach
                         @endif
